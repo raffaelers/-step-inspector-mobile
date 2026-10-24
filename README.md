@@ -1,7 +1,9 @@
-STEP Inspector Mobile v0.2
+# STEP Inspector Mobile 0.3
 
-Correzione: schermata di caricamento che rimaneva visibile per regola CSS #loading display:flex nonostante attributo hidden.
+Novità: trascinamento invertito rispetto alla v0.2; pulsante **Interroga** per leggere coordinate del punto toccato, normale triangolo, ingombro della mesh selezionata e area del triangolo. Questi valori provengono dalla triangolazione, non da superfici analitiche STEP. Non sono misure di collaudo.
 
-Caricare tutti i file nella root del repository GitHub Pages, sovrascrivendo quelli precedenti. Attendere deploy e ricaricare Safari.
+## Aggiornamento GitHub Pages
+Carica **tutti i file dentro questa cartella** nella root del repository (non lo ZIP), sostituendo i precedenti. Conferma con Commit changes e attendi il deploy. Apri il sito in Safari, poi eventualmente reinstalla l'app dalla schermata Home se la cache resta vecchia.
 
-La demo mostra un parallelepipedo; apertura STEP richiede libreria OpenCascade scaricata via rete al primo utilizzo. Misure solo indicative, non per collaudo.
+## Limiti
+La modalità offline dipende dalla cache e dal caricamento precedente delle librerie esterne; il caricamento STEP può richiedere rete al primo uso. La funzione Interroga non calcola diametri o raggi esatti: richiedono l'accesso alle superfici B-Rep con ulteriori sviluppi.

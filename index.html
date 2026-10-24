@@ -1,0 +1,8 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#0c1526"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="STEP Inspector"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon.svg"><link rel="stylesheet" href="style.css"><title>STEP Inspector Mobile</title></head><body>
+<header><div class="brand"><span class="mark">◈</span><div><strong>STEP Inspector</strong><small>MOBILE · PROTOTIPO 0.1</small></div></div><button id="fit" class="small">⌗ Inquadra</button></header>
+<main id="viewport"><div id="loading"><div class="spinner"></div><span id="loadingText">Caricamento visualizzatore…</span></div><div id="hint">Trascina per ruotare · Due dita per zoom e spostamento</div><div id="measure" hidden></div><div id="badge">DEMO</div></main>
+<section id="sheet"><div id="filename">Modello dimostrativo</div><div id="status">Pronto per aprire un file STEP</div><div id="dims">Ingombro: —</div></section>
+<nav><button id="openBtn"><span>▣</span>Apri</button><button id="modeBtn"><span>⌖</span>Misura</button><button id="viewBtn"><span>◫</span>Vista</button><button id="infoBtn"><span>ⓘ</span>Info</button></nav>
+<input id="file" type="file" accept=".step,.stp,.STEP,.STP" hidden>
+<div id="modal" hidden><div class="dialog"><button id="close">✕</button><h2 id="modalTitle"></h2><div id="modalContent"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script><script src="app.js"></script></body></html>
